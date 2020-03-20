@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
-  script: python setup.py install
+  number: 1002
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py3k or linux]
 
 requirements:
@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/ioLab/python-ioLabs
-  license: BSD-3
+  license: BSD-3-Clause
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'ioLab response box library'
   license_family: BSD
