@@ -29,7 +29,7 @@ test:
 
 about:
   home: https://github.com/ioLab/python-ioLabs
-  license: BSD-3
+  license: BSD-3-Clause
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'ioLab response box library'
   license_family: BSD
