@@ -4,7 +4,7 @@
 
 package:
   name: iolabs
-  version: {{version}}
+  version: {{ version }}
 
 source:
   fn: ioLabs-3.2.tar.gz
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: 1003
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py3k or linux]
 
